@@ -179,3 +179,13 @@ nav{
 .text-field:hover{
     border: 2px solid #FF008E;
 }
+
+/* footer style */
+.footer-info{
+    background-color: #FF008E;
+    text-align: center;
+    padding: 20px;
+}
+.footer-info p{
+    color: #fff;
+}
