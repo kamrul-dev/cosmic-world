@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,400;0,600;1,500;1,600&family=Poppins:wght@500&family=Raleway:wght@700&display=swap');
-:root{
-    --primary-color:;
-}
 *{
     margin: 0;
     padding: 0;
@@ -137,6 +134,27 @@ nav{
     color: #FF008E;
     text-decoration: none;
 }
+/* About section style */
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.about-left img{
+    width: 100%;
+}
+.about-right h3{
+    font-size: 36px;
+}
+.about-right p{
+    margin: 30px 0;
+ }
+ 
+.about-right a{
+   text-decoration: none;
+}
 
 /* Gallery Style */
 .gallery{
@@ -156,7 +174,7 @@ nav{
 .contact{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;   
+    gap: 60px;   
 }
 .contact-left img{
     width: 100%;
