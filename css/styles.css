@@ -74,6 +74,15 @@ nav{
     font-weight: 600;
     padding: 15px 10px;
 }
+/* nav toggler icon */
+#nav-toggler{
+    display: none;
+}
+.nav-toggler-icon{
+    display: none;
+    color: #fff;
+    font-size: 30px;
+}
 .banner{
     height: calc(100vh - 80px);
     min-height: 500px;
@@ -240,5 +249,26 @@ nav{
     .banner-left{
         order: 2;
         padding: 30px 0;
+    }
+    .nav-toggler-icon{
+        display: block;
+    }
+    .navigation{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        background-color: #fff;
+        transform: translateY(-330px);
+        transition: 0.5s ease-in-out;
+    }
+    .navigation li a{
+        color: #FF008E;
+    }
+    #nav-toggler:checked ~ .navigation{
+        transform: translateY(0px);
     }
 }
